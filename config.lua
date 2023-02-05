@@ -8,7 +8,7 @@ Config.UpdateFrequency = 300                -- Seconds interval between removing
 
 Config.Notifications = true                 -- Notification played when skill is added (set to "false" to disable)
 
-Config.NotifyType = 'okok'                  -- Notification type: 'qb' for QBCore notification, 'okok' for okokNotify
+Config.NotifyType = 'qb'                  -- Notification type: 'qb' for QBCore notification, 'okok' for okokNotify
 
 Config.Debug = false                        -- Set to "true" to print debugging messages
 
@@ -25,6 +25,18 @@ Config.Skillmenu = "skills"                 -- phrase typed to display skills me
 -- The following skills which appear in this default list are used by one or more mz- resources. 
 
 Config.Skills = {
+    ["Stamina"] = {
+        ["Current"] = 0,
+        ["RemoveAmount"] = 0,
+        ["Stat"] = "MP0_STAMINA",
+        ['icon'] = 'fas fa-walking',
+    },
+    ["Strength"] = {
+        ["Current"] = 0,
+        ["RemoveAmount"] = 0,
+        ["Stat"] = "MP0_STRENGTH",
+        ['icon'] = 'fas fa-dumbbell',
+    },
     ["Searching"] = {
         ["Current"] = 0,
         ["RemoveAmount"] = 0,
